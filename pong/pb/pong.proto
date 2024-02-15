@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "./pb";
+
+service Pong {
+    rpc PongMessage(PongRequest) returns (PongResponse);
+}
+
+message PongRequest {
+    string Message = 1;
+}
+
+message PongResponse {
+    string Message = 1;
+}
